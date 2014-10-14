@@ -48,6 +48,8 @@
         li.className = 'checked';
         target.innerHTML = '&#9745;';
       }
+
+      localStorage.tasks = taskList.innerHTML;
     } else if (target.className === "delete") {
       event.preventDefault();
       li.parentNode.removeChild(li);
